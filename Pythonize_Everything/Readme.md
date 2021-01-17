@@ -1,0 +1,3 @@
+RESOURCES OF PYTHONIZE EVERYTHING!
+ 
+Workshop held by Cepheus'21, IIT Goa.
