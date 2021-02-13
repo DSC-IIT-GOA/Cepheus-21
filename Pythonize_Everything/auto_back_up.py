@@ -40,7 +40,7 @@ def size_if_newer(source, target):
 
     # The time difference of one second is necessary since subsecond accuracy
     # of os.st_mtime is striped by copy2
-    return src_stat.st_size if (src_stat.st_mtime - target_ts > 1) else False
+    return src_stat.st_size if abs(src_stat.st_mtime - target_ts > 1) else False
 
 def sync_file(source, target, compress):
     size = size_if_newer(source, target)
